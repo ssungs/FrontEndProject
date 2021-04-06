@@ -115,31 +115,31 @@
   border: 1px solid red;
 }
 
-.common.hide {  
+.common.hide {
   display: none;
 }
 
-.language1 {  
+.language1 {
   left: 100px;
   background-color: #CCC;
 }
 
-.language2 {  
+.language2 {
   left: 555px;
   background-color: #CCC;
 }
 
-.language3 {  
+.language3 {
   right: 555px;
   background-color: #CCC;
 }
 
-.language4 {  
+.language4 {
   right: 100px;
   background-color: #CCC;
 }
 
-.close {  
+.close {
   border: none;
   background-color: #fff;
   position: absolute;
@@ -154,33 +154,33 @@
   background-color: pink;
 }
 
-.question { 
+.question {
   padding: 20px;
   margin: 10px;
 }
 
 
-.question1 { 
+.question1 {
   border: 1px solid blue;
 }
 
-.question2 { 
+.question2 {
   border: 1px solid black;
 }
 
-.question3 { 
+.question3 {
   border: 1px solid greenyellow;
 }
 
-.question4 { 
+.question4 {
   border: 1px solid darkorchid;
 }
 
-.question5 { 
+.question5 {
   border: 1px solid aqua;
 }
 
-.submit { 
+.submit {
   width: 100px;
   height: 50px;
   cursor: pointer;
