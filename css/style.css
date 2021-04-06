@@ -1,57 +1,42 @@
-/* body {  
-    box-sizing: content-box;
-} */
+body {
+  font-size: 12px;
+  background-color: gray;
+}
 
 .header {
   background-color: blue;
-  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.logo {
-  display: inline-block;
-  width: 150px;
-  height: 100%;
+.logo-name {
   background-color: purple;
-  border: 1px solid red;
-  float: left;
+  font-size: 1.5rem;
+  padding: 20px;
 }
 
 .take-test {
-  width: 150px;
-  height: 100%;
-  display: flex;
   background-color: yellow;
-  border: 1px solid green;
-  float: right;
+  padding: 20px;
 }
 
-.move-page {
-  padding: 10px 35px;
+.test-button {
+  background-color: pink;
+  padding: 15px 35px;
+  font-size: 1.3rem;
 }
 
-.title {
-  font-size: 40px;
-  text-align: center;
-  height: 50px;
-}
-
-
+/* CAROUSEL */
 .carousel {
-  margin-top: 20px;
-  background-color: green;
-  height: 20vh;
-}
-
-.carousel {
+  background-color: black;
   position: relative;
   margin: 0 auto;
   height: auto;
-  object-fit: scale-down;
+  /* object-fit: scale-down; */
   overflow: hidden;
-  
-  /* carousel 요소의 width 셋팅이 완료될 때까지 감춘다. */
 }
-
 .carousel-slides {
   --currentSlide: 0;
   --duration: 0;
@@ -60,90 +45,63 @@
   transition: transform calc(var(--duration) * 1ms) ease-out;
   transform: translate3D(calc(var(--currentSlide) * -100%), 0, 0);
 }
-
 .carousel-slides img {
   padding: 5px;
   width: 700px;
   height: auto;
   object-fit: fill;
 }
-
-/* carousel의 prev, next 버튼 */
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2em;
+  font-size: 1rem;
   color: #fff;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
   z-index: 99;
 }
-
 .carousel-control:focus {
   outline: none;
 }
-
-/* carousel의 prev 버튼 */
 .carousel-control.prev {
   left: 0;
 }
-
-/* carousel의 next 버튼 */
 .carousel-control.next {
   right: 0;
 }
 
+
+/* OTHER LANGUAGE INFO */
 .language-info {
-  margin-top: 20px;
-  height: 500px;
+  position: relative;
+  /* margin-top: 20px;
+  height: 500px; */
   background-color: yellowgreen;
 }
-
 .info-title {
   text-align: center;
   font-size: 30px;
   padding: 20px;
 }
-
-.select-list {
-  height: 85%;
-  position: relative;
+.language-lists{
+  display: flex;
+  justify-content: space-around;
 }
-
-.common {
+.language-img {
   position: absolute;
-  display: inline-block;
-  width: 350px;
-  height: 350px;
+  width: 150px;
+  height: 150px;
   top: 20px;
-  border: 1px solid red;
+  border: 1px solid red; 
 }
-
-.common.hide {
+.language-item.hide {
   display: none;
 }
 
-.language1 {
-  left: 100px;
-  background-color: #CCC;
-}
 
-.language2 {
-  left: 555px;
-  background-color: #CCC;
-}
 
-.language3 {
-  right: 555px;
-  background-color: #CCC;
-}
-
-.language4 {
-  right: 100px;
-  background-color: #CCC;
-}
 
 .close {
   border: none;
