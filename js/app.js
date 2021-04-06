@@ -60,9 +60,9 @@ const carousel = ($container, images) => {
     };
 
     carousel(document.querySelector('.carousel'), [
-    '/images/cssBanner.jpg',
+    '/images/cssBanner.jpeg',
     '/images/htmlBanner.jpeg',
-    '/images/javascriptBanner.png',
+    '/images/javascriptBanner.jpeg',
     '/images/pythonBanner.jpeg'
     ]);
 
