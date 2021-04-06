@@ -45,9 +45,10 @@
 .carousel {
   position: relative;
   margin: 0 auto;
+  height: auto;
+  object-fit: scale-down;
   overflow: hidden;
-  width: 700px;
-  height: auto:
+  
   /* carousel 요소의 width 셋팅이 완료될 때까지 감춘다. */
 }
 

@@ -35,8 +35,8 @@ const carousel = ($container, images) => {
     });
 
     window.onload = () => {
-    //   const { offsetWidth } = $carouselSlides.querySelector('img');
-    //   $container.style.width = `${offsetWidth}px`;
+      const { offsetWidth } = $carouselSlides.querySelector('img');
+      $container.style.width = `${offsetWidth}px`;
 
         move(++currentSlide);
         $container.style.opacity = 1;
