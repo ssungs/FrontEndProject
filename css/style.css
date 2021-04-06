@@ -108,29 +108,86 @@
 
 .select-list {
   height: 85%;
-  display: flex;
+  position: relative;
 }
 
-.HTML,
-.CSS,
-.JAVASCRIPT,
-.PYTHON {
+.common {
+  position: absolute;
   display: inline-block;
-  width: 20%;
-  height: 80%;
-  margin: auto;
+  width: 350px;
+  height: 350px;
+  top: 20px;
   border: 1px solid red;
 }
 
-/* .HTML { 
-  margin-left: 20%;
+.common.hide {
+  display: none;
 }
-.PYTHON {   
-  margin-right: 20%;
-} */
+
+.language1 {
+  left: 100px;
+  background-color: #CCC;
+}
+
+.language2 {
+  left: 555px;
+  background-color: #CCC;
+}
+
+.language3 {
+  right: 555px;
+  background-color: #CCC;
+}
+
+.language4 {
+  right: 100px;
+  background-color: #CCC;
+}
+
+.close {
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 
 .footer {
   margin-top: 20px;
   height: 15vh;
   background-color: pink;
+}
+
+.question {
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.question1 {
+  border: 1px solid blue;
+}
+
+.question2 {
+  border: 1px solid black;
+}
+
+.question3 {
+  border: 1px solid greenyellow;
+}
+
+.question4 {
+  border: 1px solid darkorchid;
+}
+
+.question5 {
+  border: 1px solid aqua;
+}
+
+.submit {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
 }
