@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/test-page.js"></script>
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./js/app.js"></script>
+  <title>Coding Test | Javascript, HTML, CSS, Python and more!</title>
 </head>
 <style>
   .hidden {
@@ -19,18 +20,12 @@
 </style>
 
 <body>
-  <div class="header">
-    <div class="logo">
-      <img src="" alt="logo-image">
-    </div>
-    <div class="take-test">
-      <a href="./take-test.html" class='move-page'>Take Test</a>
-    </div>
-    <h1 class="title">team-erum QUIZ</h1>
-  </div>
-
+  <header class="header">
+    <h1 class="logo-name">Team Ereum Testing Website</h1>
+    <a href="./take-test.html" class="test-button">Take Test</a>
+  </header>
   <div class="carousel-static-container">
-    <img src="" alt="JS">
+    <img src="/images/banner_js.png" alt="JS">
   </div>
 
   <div class="container">
@@ -42,7 +37,7 @@
         <input type="radio" name="question1" class="choice3"><span>C</span>Class Based Language</input>
         <input type="radio" name="question1" class="choice4"><span>D</span>None of the Above</input>
       </article>
-       <article class="solution1 hidden">he answer to this question is choice <span class="answer">A</span>. Javascript
+      <article class="solution1 hidden">he answer to this question is choice <span class="answer">A</span>. Javascript
         is a high-level,
         just-in-time compiled, and multi-paradigm programming language the conforms to the ECMAScript specifications.
       </article>
@@ -62,7 +57,8 @@
         refer to the object of its instance when it is called upon, in this case 'obj' itself. </article>
     </section>
     <section class="question question3">
-      <h2 class="question-3">Q3. Which of the following function of Array object adds and/or removes elements in an array?
+      <h2 class="question-3">Q3. Which of the following function of Array object adds and/or removes elements in an
+        array?
       </h2>
       <article id='3' class="multiple-choice q3">
         <input type="radio" name="question3" class="choice1"><span>A</span>unshift()</input>
@@ -95,18 +91,15 @@
         <input type="radio" name="question5" class="choice3"><span>C</span>if (i == 5) </input>
         <input type="radio" name="question5" class="choice4"><span>D</span>None of the Above</input>
       </article>
-      <article class="solution5 hidden"> The answer to this question is choice <span class="answer">C</span>. The correct
+      <article class="solution5 hidden"> The answer to this question is choice <span class="answer">C</span>. The
+        correct
         syntax in JavaScript to
         write an "if" condition is to write "if", followed by a boolean condition expressed inside round brackets "( )"
       </article>
     </section>
   </div>
-
-
   <button class="submit">SUBMIT</button>
-
   <footer class="footer">footer text</footer>
-
 </body>
 
 </html>

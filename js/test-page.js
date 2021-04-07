@@ -47,6 +47,4 @@ $button.onclick = () => {
       $solution[i].style.display = 'block';
     }
   }
-  // console.log(userAnswer);
-  // $hidden.style.display = 'block';
 }
