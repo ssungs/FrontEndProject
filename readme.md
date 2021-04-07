@@ -50,7 +50,7 @@ April 5:
 - [x] Implement initial layout CSS
 
 April 6:
-- [ ] Work on page CSS
+- [x] Work on page CSS
 - [ ] Create Event Handlers
     Main Page:
     - [x] Carousel Sliding Effect
