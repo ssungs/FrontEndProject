@@ -11,7 +11,7 @@ $selectLists.onclick = e => {
 const carousel = ($container, images) => {
     let currentSlide = 0;
     let isMoving = false;
-    const DURATION = 500;
+    const DURATION = 500; 
 
     const timerId = null;
     let $carouselSlides = null;
