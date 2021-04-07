@@ -1,12 +1,24 @@
+/* RESET STYLING */
+.reset-list{ 
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* START STYLING */
 body {
   font-size: 12px;
   /* background-color: gray; */
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
+/* COMMON HEADER */
 .header {
-  /* background-color: blue; */
   display: flex;
-  /* flex-flow: row wrap; */
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
@@ -31,17 +43,15 @@ body {
   font-size: 1.3rem;
 }
 
-/* CAROUSEL */
+/* CAROUSEL FOR INDEX.HTML */
 .carousel-container {
   position: relative;
   /* background-color: aqua; */
 }
 .carousel {
-  background-color: black;
   position: relative;
   margin: 0 auto;
   height: auto;
-  /* object-fit: scale-down; */
   overflow: hidden;
 }
 .carousel-slides {
@@ -53,7 +63,7 @@ body {
   transition: transform calc(var(--duration) * 1ms) ease-out;
   transform: translate3D(calc(var(--currentSlide) * -100%), 0, 0);
 }
-.carousel-slides img {
+.carousel-slides img{
   flex-shrink: 1;
   width: 676px;
   align-self: center;
@@ -80,6 +90,11 @@ body {
   right: 0;
 }
 
+/* CAROUSEL -STATIC  */
+.carousel-static-container img{
+  width: 676px;
+  height: auto;
+}
 
 /* OTHER LANGUAGE INFO */
 .language-info {
@@ -114,46 +129,10 @@ body {
 
 
 
-
-.close {
-  border: none;
-  background-color: #fff;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.footer {
-  margin-top: 20px;
-  height: 15vh;
-  background-color: pink;
-}
-
+/* QUIZ QUESTIONS */
 .question {
   padding: 20px;
   margin: 10px;
-}
-
-
-.question1 {
-  border: 1px solid blue;
-}
-
-.question2 {
-  border: 1px solid black;
-}
-
-.question3 {
-  border: 1px solid greenyellow;
-}
-
-.question4 {
-  border: 1px solid darkorchid;
-}
-
-.question5 {
-  border: 1px solid aqua;
 }
 
 .submit {
@@ -161,4 +140,12 @@ body {
   height: 50px;
   cursor: pointer;
   margin: 0 auto;
+}
+
+/* COMMON FOOTER */
+
+.footer {
+  margin-top: 20px;
+  height: 15vh;
+  background-color: pink;
 }
