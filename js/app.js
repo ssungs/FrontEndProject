@@ -62,4 +62,4 @@ const carousel = ($container, images) => {
     '/images/banner_html.jpeg',
     '/images/banner_js.png',
     '/images/banner_python.png'
-    ]);
+    ]); 
