@@ -3,7 +3,7 @@
 } */
 
 .header {
-  background-color: blue;
+    /* background-color: blue; */
   height: 7vh;
 }
 
@@ -11,7 +11,7 @@
   display: inline-block;
   width: 150px;
   height: 100%;
-  background-color: purple;
+  /* background-color: purple; */
   border: 1px solid red;
   float: left;
 }
@@ -20,7 +20,7 @@
   width: 150px;
   height: 100%;
   display: flex;
-  background-color: yellow;
+  /* background-color: yellow; */
   border: 1px solid green;
   float: right;
 }
@@ -92,7 +92,7 @@
 .language-info {
   margin-top: 20px;
   height: 500px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 
 .info-title {
@@ -103,23 +103,25 @@
 
 .select-list {
   height: 85%;
-  position: relative;
+  display: flex;
 }
 
 .common {
-  position: absolute;
-  display: inline-block;
+  display: flex;
+  position: relative;
+  /* position: absolute; */
   width: 350px;
   height: 350px;
   top: 20px;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
-.common.hide {
+.img.hide {
   display: none;
 }
 
-.language1 {
+/* .language1 {
   left: 100px;
   background-color: #CCC;
 }
@@ -130,22 +132,29 @@
 }
 
 .language3 {
-  right: 555px;
+  left: 1010px;
   background-color: #CCC;
 }
 
 .language4 {
-  right: 100px;
+  left: 1460px;
   background-color: #CCC;
+} */
+
+.info { 
+  width: 100%;
+  height: 100%;
+  background-color: #CCC;
+  /* z-index: 1; */
 }
 
-.close {
-  border: none;
-  background-color: #fff;
+.img  {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #fff;
 }
 
 .footer {
@@ -159,17 +168,17 @@
   margin: 10px;
 }
 
-
 .question1 {
   border: 1px solid blue;
 }
 
 .question2 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid black;
 }
 
 .question3 {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
 }
 
 .question4 {
@@ -180,9 +189,17 @@
   border: 1px solid aqua;
 }
 
+
+
+.answer { 
+  font-size: 18px;
+  color: red;
+}
+
 .submit {
   width: 100px;
   height: 50px;
   cursor: pointer;
   margin: 0 auto;
 }
+
