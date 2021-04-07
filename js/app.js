@@ -1,4 +1,4 @@
-$selectLists = document.querySelector('.select-list');
+$selectLists = document.querySelector('.language-lists');
 
 $selectLists.onclick = e => {
   if (e.target === $selectLists) return;
@@ -27,8 +27,6 @@ const carousel = ($container, images) => {
         <div class="carousel-slides">
             ${[images[images.length - 1], ...images, images[0]].map(url => `<img src="${url}" />`).join('')}
         </div>
-        <button class="carousel-control prev">&laquo;</button>
-        <button class="carousel-control next">&raquo;</button>
         `;
 
         $carouselSlides = document.querySelector('.carousel-slides');
@@ -60,9 +58,9 @@ const carousel = ($container, images) => {
     };
 
     carousel(document.querySelector('.carousel'), [
-    '/images/cssBanner.jpeg',
-    '/images/htmlBanner.jpeg',
-    '/images/javascriptBanner.jpeg',
-    '/images/pythonBanner.jpeg'
+    '/images/banner_css.png',
+    '/images/banner_html.jpeg',
+    '/images/banner_js.png',
+    '/images/banner_python.png'
     ]);
 
