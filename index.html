@@ -14,47 +14,75 @@
       <h1 class="logo-name">Team Ereum Testing Website</h1>
       <a href="./quiz-page.html" class="test-button">Take Test</a>
     </header>
-    <div class="carousel">
-      <!-- <div class="carousel-slide">
-            <img src="/images/cssBanner.jpg" alt="HTML">
-            <img src="" alt="CSS">
-            <img src="" alt="JAVASCRIPT">
-            <img src="" alt="PYTHON">
-        </div>
-        <button class="carousel-control prev">&laquo;</button>
-        <button class="carousel-control next">&raquo;</button> -->
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- 
+          <div class="carousel-slides">
+              ${[images[images.length - 1], ...images, images[0]].map(url => `<img src="${url}" />`).join('')}
+          </div>
+        -->
+      </div>
+      <button class="carousel-control prev">&laquo; previous</button>
+      <button class="carousel-control next">next &raquo;</button>
     </div>
     <section class="language-info">
       <h2 class="info-title">Program Languages</h2>
-      <ul class="language-lists"></ul>
-        <li class="language-item language-item-text language-html">
-          <div class="info HTML">HTML</div>
+      <ul class="language-lists">
+        <li class="language-item language-item-text language-html">HTML
+          <ul>
+            <li><img src="./images/html css.png" alt="HTML-image" class="language-img"/></li>
+          </ul>
         </li>
-        <li class="language-item language-item-text language-css">
+        <li class="language-item language-item-text language-css">CSS
+          <ul>
+            <li><img src="./images/html css.png" alt="HTML-image" class="language-img"/></li>
+          </ul>
+        </li>
+        <li class="language-item language-item-text language-js">Javascript
+          <ul>
+            <li><img src="./images/html css.png" alt="HTML-image" class="language-img"/></li>
+          </ul>
+        </li>
+        <li class="language-item language-item-text language-python">Python
+          <ul>
+            <li><img src="./images/html css.png" alt="HTML-image" class="language-img"/></li>
+          </ul>
+        </li>
+      </ul>
+        <!-- <li class="language-item language-item-text language-css">
           <div class="info CSS">CSS</div>
+          <img src="./images/html css.png" alt="CSS-image" class="language-img" />
         </li>
         <li class="language-item language-item-text language-js">
           <div class="info JAVASCRIPT">Javascript</div>
+          <img src="./images/html css.png" alt="JS-image" class="language-img" />
         </li>
         <li class="language-item language-item-text language-python">
           <div class="info PYTHON">Python</div>
+          <img src="./images/html css.png" alt="PYTHON-image" class="language-img" />
         </li>
         <li class="language-item language-item-img language-html">
-          <img src="./images/html css.png" alt="HTML-image" class="language-img" />
         </li>
         <li class="language-item language-item-img language-css">
-            <img src="./images/html css.png" alt="CSS-image" class="language-img" />
         </li>
         <li class="language-item language-item-img language-js">
-            <img src="./images/html css.png" alt="JS-image" class="language-img" />
         </li>
         <li class="language-item language-item-img language-python">
-            <img src="./images/html css.png" alt="PYTHON-image" class="language-img" />
-        </li>
+        </li> -->
       </ul>
     </section>
     <footer class="footer">
-        <address>Copyright 2021 All Rights Reserved.</address>
+      <div class="address">
+        <address>
+          <span>김도준 @downside154</span>
+          <span>김성수 @ssungs</span>
+          <span>최은비 @ebchoi</span>
+      </div>
+      <div class="copyright">
+        <small>
+          Copyright since &copy; 2021 by Team Ereum ALL RIGHTS RESERVED.
+        </small>
+      </div>
     </footer>
   </body>
 </html>
