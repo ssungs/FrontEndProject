@@ -63,10 +63,3 @@ const carousel = ($container, images) => {
     '/images/banner_js.png',
     '/images/banner_python.png'
     ]);
-
-
-
-
-
-
-
