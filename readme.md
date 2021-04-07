@@ -13,6 +13,12 @@
 
 3. Javascript DOM과 이벤트를 통해서 더 interactive한 느낌을 살려주는 웹사이트 구현해보기
 
+## 추가 확장할수있는 기능들
+
+1. Carousel 옆으로 넘기기 버튼에 previous 와 next를 더 자세한 description 으로 바뀌도록 구현
+
+2. 
+
 ## Team Members
 
 김도준 Dojun Kim @downside154
