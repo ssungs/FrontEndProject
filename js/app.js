@@ -75,3 +75,4 @@ $selectLists.onclick = e => {
   if (e.target === $selectLists) return;
   toggleProperty(e);
 }
+
