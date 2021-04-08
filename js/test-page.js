@@ -1,50 +1,28 @@
 //Quiz page
 
-let userAnswer = [];
+let userAnswer = {};
+const solution = { '1': 'choice1', '2': 'choice2', '3': 'choice4', '4': 'choice2', '5': 'choice3' };
 
-const $container = document.querySelector('.container');
-
+const $container = document.querySelector('.test-container');
 const $button = document.querySelector('.submit');
-
-const $mpChoiceQ1 = document.querySelector('.q1');
-const $mpChoiceQ2 = document.querySelector('.q2');
-const $mpChoiceQ3 = document.querySelector('.q3');
-const $mpChoiceQ4 = document.querySelector('.q4');
-const $mpChoiceQ5 = document.querySelector('.q5');
-const $solQ1 = document.querySelector('.solution1');
-const $solQ2 = document.querySelector('.solution2');
-const $solQ3 = document.querySelector('.solution3');
-const $solQ4 = document.querySelector('.solution4');
-const $solQ5 = document.querySelector('.solution5');
 const $hidden = document.querySelectorAll('.hidden');
 
-let $solution = [$solQ1, $solQ2, $solQ3, $solQ4, $solQ5];
+const findId = (e, id) => {
+  if ( e.target.classList.contains(solution[`${id}`]) ) {
+    userAnswer[`${id}`] = true;
+  } else userAnswer[`${id}`] = false;
+  console.log(userAnswer);
+}
 
-$mpChoiceQ1.onchange = e => {
-  e.target.className === 'choice1' ? userAnswer.push('ok') : userAnswer.push('no');
-  return userAnswer;
-};
-$mpChoiceQ2.onchange = e => {
-  e.target.className === 'choice2' ? userAnswer.push('ok') : userAnswer.push('no');
-  return userAnswer;
-};
-$mpChoiceQ3.onchange = e => {
-  e.target.className === 'choice4' ? userAnswer.push('ok') : userAnswer.push('no');
-  return userAnswer;
-};
-$mpChoiceQ4.onchange = e => {
-  e.target.className === 'choice2' ? userAnswer.push('ok') : userAnswer.push('no');
-  return userAnswer;
-};
-$mpChoiceQ5.onchange = e => {
-  e.target.className === 'choice3' ? userAnswer.push('ok') : userAnswer.push('no');
-  return userAnswer;
-};
+$container.onclick = e => {
+  if (!e.target.classList.contains('test-choice')) return;
+  const { id } = e.target.parentNode;
+  findId(e, id);
+}
 
 $button.onclick = () => {
-  for (let i = 0; i < 5; i++) {
-    if (userAnswer[i] !== 'ok') {
-      $solution[i].style.display = 'block';
-    }
+  for (let i = 1; i < 6; i++) {
+    !userAnswer[`${i}`] ? [...$hidden][`${i}`].style.setProperty('display', 'block') : 
+                          [...$hidden][`${i}`].style.setProperty('display', 'none');
   }
 }
