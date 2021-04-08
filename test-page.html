@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style_test.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Racing+Sans+One&family=Rock+Salt&display=swap" rel="stylesheet">
+    <script defer src="./js/test-page.js"></script>
+    <title>Coding Test | Javascript, HTML, CSS, Python and more!</title>
+  </head>
+<body>
+  <header class="header">
+    <h1 class="logo-name"><a href="./index.html">Team Ereum Testing Website</a></h1>
+    <a href="./test-page.html" class="test-button">Take Test</a>
+  </header>
+  <div class="carousel-static-container">
+    <img src="/images/banner_js.png" alt="JAVASCRIPT" class="carousel-static-image">
+  </div>
+  <div class="test-container">
+    <div class='hidden' style="display: none"></div>
+    <section class="question question1">
+      <h2 class="question-1" tabindex="0">Q1. Which of the following is true about Javascript?</h2>
+      <ul role="radiogroup" aria-labelledby="question1" id='1' class="multiple-choice q1">
+        <li role="radio" aria-checked="true" class="test-choice choice1"><span>A.</span>Multi-Paradigm Language</li>
+        <li role="radio" aria-checked="false" class="test-choice choice2"><span>B.</span>Low Level Language</li>
+        <li role="radio" aria-checked="false" class="test-choice choice3"><span>C.</span>Class Based Language</li>
+        <li role="radio" aria-checked="false" class="test-choice choice4"><span>D.</span>None of the Above</li>
+        <li class="solution1 hidden" style="display: none">The answer to this question is choice <span class="answer">A</span>. Javascript
+          is a high-level, just-in-time compiled, and multi-paradigm programming language the conforms to the ECMAScript specifications.
+        </li>
+      </ul>
+    </section>
+  
+    <section class="question question2">
+      <h2 class="question-2" tabindex="0" >Q2. Which of the following values for "x" will make the console.log value be "true" for the
+        code below?</h2>
+      <div> <img src="./images/question2.png" alt="obj.bar(x) question"></div>
+      <ul role="radiogroup" aria-labelledby="question2" id='2' class="multiple-choice q2">
+        <li role="radio" aria-checked="false" class="test-choice choice1"><span>A.</span>foo</input>
+        <li role="radio" aria-checked="false" class="test-choice choice2"><span>B.</span>obj</input>
+        <li role="radio" aria-checked="false" class="test-choice choice3"><span>C.</span>window</input>
+        <li role="radio" aria-checked="false" class="test-choice choice4"><span>D.</span>undefined</input>
+        <li class="solution2 hidden" style="display: none"> The answer to this question is choice <span class="answer">B</span>. The 'this' inside foo is being used to refer to the object of its instance when it is called upon, in this case 'obj' itself. </li>
+        </ul>
+    </section>
+
+    <section class="question question3">
+      <h2 class="question-3" tabindex="0" >Q3. Which of the following function of Array object adds and/or removes elements in an array?
+      </h2>
+      <ul role="radiogroup" aria-labelledby="question3" id='3' class="multiple-choice q3">
+        <li role="radio" aria-checked="false" class="test-choice choice1"><span>A.</span>unshift()</input>
+        <li role="radio" aria-checked="false" class="test-choice choice2"><span>B.</span>append()</input>
+        <li role="radio" aria-checked="false" class="test-choice choice3"><span>C.</span>sort()</input>
+        <li role="radio" aria-checked="false" class="test-choice choice4"><span>D.</span>splice()</input>
+          <li class="solution3 hidden" style="display: none"> The answer to this question is choice <span class="answer">D</span>. "splice()"
+            can be used to both add and
+            remove elements in an array. </li>
+        </ul>
+    </section>
+
+    <section class="question question4">
+      <h2 class="question-4" tabindex="0" >Q4. Which HTML element is JavaScript placed in?</h2>
+      <ul role="radiogroup" aria-labelledby="question4" id='4' class="multiple-choice q4">
+        <li role="radio" aria-checked="false" class="test-choice choice1"><span>A.</span>js </input>
+        <li role="radio" aria-checked="false" class="test-choice choice2"><span>B.</span>script </input>
+        <li role="radio" aria-checked="false" class="test-choice choice3"><span>C.</span>style </input>
+        <li role="radio" aria-checked="false" class="test-choice choice4"><span>D.</span>javascript </input>
+          <li class="solution4 hidden" style="display: none"> The answer to this question is choice <span class="answer">B</span>. Javascript
+            code should be placed inside
+            the "script" element in HTML. </li>
+        </ul>
+    </section>
+
+    <section class="question question5">
+      <h2 class="question-5" tabindex="0">Q5. Which of the following is the correct syntax to write an "if" condition in JavaScript?
+      </h2>
+      <ul role="radiogroup" aria-labelledby="question5" id='5' class="multiple-choice q5">
+        <li role="radio" aria-checked="false" class="test-choice choice1"><span>A.</span>if: i = 5 </input>
+        <li role="radio" aria-checked="false" class="test-choice choice2"><span>B.</span>if i = 5 </input>
+        <li role="radio" aria-checked="false" class="test-choice choice3"><span>C.</span>if (i == 5) </input>
+        <li role="radio" aria-checked="false" class="test-choice choice4"><span>D.</span>None of the Above</input>
+          <li class="solution5 hidden" style="display: none"> The answer to this question is choice <span class="answer">C</span>. The correct
+            syntax in JavaScript to write an "if" condition is to write "if", followed by a boolean condition expressed inside round brackets "( )"
+          </li>
+      </ul>
+    </section>
+
+    <button class="submit-button">SUBMIT</button>
+  </div>
+  <footer class="footer">
+    <div class="address">
+      <address>
+        <span class="contributors">Dojun Kim <a href="https://github.com/downside154">@downside154</a></span>
+        <span class="contributors">Sungsoo Kim <a href="https://github.com/ssungs"> @ssungs</a></span>
+        <span class="contributors">Eunbi Choi <a href="https://github.com/ebchoi">@ebchoi</a></span>
+      </address>
+    </div>
+    <div class="copyright">
+      <small>
+        Copyright since &copy; 2021 by Team Ereum ALL RIGHTS RESERVED.
+      </small>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* CAROUSEL FOR INDEX.HTML */
+.carousel-container {
+  position: relative;
+  /* background-color: aqua; */
+}
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 676px;
+  border-radius: 25px;
+}
+.carousel-slides {
+  --currentSlide: 0;
+  --duration: 0;
+  /* 수평 정렬 */
+  display: flex;
+  width: 676px;
+  transition: transform calc(var(--duration) * 1ms) ease-out;
+  transform: translate3D(calc(var(--currentSlide) * -100%), 0, 0);
+}
+.carousel-slides img{
+  flex-shrink: 1;
+  width: 676px;
+  align-self: center;
+  height: auto;
+  object-fit: fill;
+}
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  z-index: 99;
+}
+.carousel-control:focus {
+  outline: none;
+}
+.carousel-control.prev {
+  left: 0;
+}
+.carousel-control.next {
+  right: 0;
+}
+
+/* OTHER LANGUAGE INFO */
+.language-info {
+  background-color:  #b8c0ff;;
+  position: relative;
+  /* margin-top: 10px; */
+  height: 500px; 
+}
+.info-title {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+.language-lists{
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.language-list {
+  background-color: yellow;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.info {
+  background-color: pink;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+}
