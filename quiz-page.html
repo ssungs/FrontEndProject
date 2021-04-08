@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
-    <script defer src="./js/app.js"></script>
+    <script defer src="./js/test-page.js"></script>
     <title>Coding Test | Javascript, HTML, CSS, Python and more!</title>
   </head>
 <body>
@@ -15,18 +15,19 @@
     <a href="./quiz-page.html" class="test-button">Take Test</a>
   </header>
   <div class="carousel carousel-static-container">
-    <img src="/images/banner_js.png" alt="JS">
+    <img src="./images/banner_js.png" alt="JS">
   </div>
   <div class="test-container">
+    <div class="hidden" style="display: none"></div>
     <section class="question question1">
       <h2 class="question-1">Q1. Which of the following is true about Javascript?</h2>
       <ul role="radiogroup" aria-labelledby="question1" id='1' class="multiple-choice q1">
-        <li role="radio" aria-checked="false" tabindex="0" id="question1" name="question1" class="test-choice choice1"><span>A. </span>Multi-Paradigm Language</li>
+        <li role="radio" aria-checked="true" tabindex="0" id="question1" name="question1" class="test-choice choice1"><span>A. </span>Multi-Paradigm Language</li>
         <li role="radio" aria-checked="false" tabindex="-1" id="question1" name="question1" class="test-choice choice2"><span>B. </span>Low Level Language</li>
         <li role="radio" aria-checked="false" tabindex="-1" id="question1" name="question1" class="test-choice choice3"><span>C. </span>Class Based Language</li>
         <li role="radio" aria-checked="false" tabindex="-1" id="question1" name="question1" class="test-choice choice4"><span>D. </span>None of the Above</li>
       </ul>
-      <article class="solution1 hidden">The answer to this question is choice <span class="answer">A</span>. Javascript
+      <article class="solution1 hidden" style="display: none">The answer to this question is choice <span class="answer">A</span>. Javascript
         is a high-level, just-in-time compiled, and multi-paradigm programming language the conforms to the ECMAScript specifications.
       </article>
     </section>
@@ -41,7 +42,7 @@
         <li role="radio" aria-checked="false" tabindex="-1" id="question2" name="question2" class="test-choice choice3"><span>C. </span>Window</input>
         <li role="radio" aria-checked="false" tabindex="-1" id="question2" name="question2" class="test-choice choice4"><span>D. </span>undefined</input>
         </ul>
-      <article class="solution2 hidden"> The answer to this question is choice <span class="answer">B</span>. The 'this'
+      <article class="solution2 hidden" style="display: none"> The answer to this question is choice <span class="answer">B</span>. The 'this'
         inside foo is being used to
         refer to the object of its instance when it is called upon, in this case 'obj' itself. </article>
     </section>
@@ -55,7 +56,7 @@
         <li role="radio" aria-checked="false" tabindex="-1" id="question3" name="question3" class="test-choice choice3"><span>C. </span>sort()</input>
         <li role="radio" aria-checked="false" tabindex="-1" id="question3" name="question3" class="test-choice choice4"><span>D. </span>splice()</input>
         </ul>
-      <article class="solution3 hidden"> The answer to this question is choice <span class="answer">D</span>. "splice()"
+      <article class="solution3 hidden" style="display: none"> The answer to this question is choice <span class="answer">D</span>. "splice()"
         can be used to both add and
         remove elements in an array. </article>
     </section>
@@ -68,7 +69,7 @@
         <li role="radio" aria-checked="false" tabindex="-1" id="question4" name="question4" class="test-choice choice3"><span>C. </span>style </input>
         <li role="radio" aria-checked="false" tabindex="-1" id="question4" name="question4" class="test-choice choice4"><span>D. </span>javascript </input>
         </ul>
-      <article class="solution4 hidden"> The answer to this question is choice <span class="answer">B</span>. Javascript
+      <article class="solution4 hidden" style="display: none"> The answer to this question is choice <span class="answer">B</span>. Javascript
         code should be placed inside
         the "script" element in HTML. </article>
     </section>
@@ -82,12 +83,12 @@
         <li role="radio" aria-checked="false" tabindex="-1" id="question5" name="question5" class="test-choice choice3"><span>C. </span>if (i == 5) </input>
         <li role="radio" aria-checked="false" tabindex="-1" id="question5" name="question5" class="test-choice choice4"><span>D. </span>None of the Above</input>
       </ul>
-      <article class="solution5 hidden"> The answer to this question is choice <span class="answer">C</span>. The correct
+      <article class="solution5 hidden" style="display: none"> The answer to this question is choice <span class="answer">C</span>. The correct
         syntax in JavaScript to write an "if" condition is to write "if", followed by a boolean condition expressed inside round brackets "( )"
       </article>
     </section>
+    <button class="submit">SUBMIT</button>
   </div>
-  <button class="submit">SUBMIT</button>
   <footer class="footer">
     <div class="address">
       <address>
