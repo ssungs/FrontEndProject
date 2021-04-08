@@ -4,7 +4,7 @@ let userAnswer = { '1': '', '2': '', '3': '', '4': '', '5': '' };
 const solution = { '1': 'choice1', '2': 'choice2', '3': 'choice4', '4': 'choice2', '5': 'choice3' };
 
 const $container = document.querySelector('.test-container');
-const $button = document.querySelector('.submit');
+const $button = document.querySelector('.submit-button');
 const $hidden = document.querySelectorAll('.hidden');
 
 const findId = (e, id) => {
