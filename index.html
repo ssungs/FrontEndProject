@@ -1,62 +1,64 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style_index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Racing+Sans+One&family=Rock+Salt&display=swap" rel="stylesheet">
     <script defer src="./js/app.js"></script>
     <title>Coding Test | Javascript, HTML, CSS, Python and more!</title>
   </head>
   <body>
     <header class="header">
       <h1 class="logo-name">Team Ereum Testing Website</h1>
-      <a href="./quiz-page.html" class="test-button">Take Test</a>
+      <a href="./test-page.html" class="test-button">Take Test</a>
     </header>
     <div class="carousel-container">
-      <div class="carousel">
-        <!-- <div class="carousel-slides">
-            ${[images[images.length - 1], ...images, images[0]].map(url => `<img src="${url}" />`).join('')}
-        </div>
-        </div>
-        <button class="carousel-control prev">&laquo; previous</button>
-        <button class="carousel-control next">next &raquo;</button> -->
+        <!-- 
+          <div class="carousel">
+          <div class="carousel-slides">
+              ${[images[images.length - 1], ...images, images[0]].map(url => `<img src="${url}" />`).join('')}
+          </div>
+          </div>
+          <button class="carousel-control prev">&laquo; previous</button>
+          <button class="carousel-control next">next &raquo;</button>
+        -->
     </div>
     <section class="language-info">
       <h2 class="info-title">Program Languages</h2>
       <ul class="language-lists">
-        <li class="language1 common">
-          <div class="language-item" style="z-index: 0;">5</div>
-          <img src="" alt="HTML-image" class="language-img" style="z-index: 0;">
+        <li class="language-list language1">
+          <div class="info HTML" style="z-index: 0;">HTML</div>
+          <img src="" alt="HTML-image" style="z-index: 0;">
         </li>
-        <li class="language2 common">
-          <div class="language-item" style="z-index: 0;">6</div>
-          <img src="" alt="CSS-image" class="language-img" style="z-index: 0;">
+        <li class="language-list language2">
+          <div class="info CSS" style="z-index: 0;">CSS</div>
+          <img src="" alt="CSS-image" style="z-index: 0;">
         </li>
-        <li class="language3 common">
-          <div class="language-item" style="z-index: 0;">7</div>
-          <img src="" alt="JS-image" class="language-img" style="z-index: 0;">
+        <li class="language-list language3">
+          <div class="info JAVASCRIPT" style="z-index: 0;">JAVASCRIPT</div>
+          <img src="" alt="JS-image" style="z-index: 0;">
         </li>
-        <li class="language4 common">
-          <div class="language-item" style="z-index: 0;">8</div>
-          <img src="" alt="PYTHON-image" class="language-img" style="z-index: 0;">
+        <li class="language-list language4">
+          <div class="info PYTHON" style="z-index: 0;"></div>
+          <img src="" alt="PYTHON-image" style="z-index: 0;">
         </li>
       </ul>
     </section>
     <footer class="footer">
       <div class="address">
         <address>
-          <span>김도준 @downside154</span>
-          <span>김성수 @ssungs</span> 
-          <span>최은비 @ebchoi</span>
+          <span class="contributors">Dojun Kim <a href="https://github.com/downside154">@downside154</a></span>
+          <span class="contributors">Sungsoo Kim <a href="https://github.com/ssungs"> @ssungs</a></span>
+          <span class="contributors">Eunbi Choi <a href="https://github.com/ebchoi">@ebchoi</a></span>
+        </address>
       </div>
       <div class="copyright">
-        <small>
-          Copyright since &copy; 2021 by Team Ereum ALL RIGHTS RESERVED.
-        </small>
+        <small>Copyright since &copy; 2021 by Team Ereum ALL RIGHTS RESERVED.</small>
       </div>
     </footer>
   </body>
 </html>
- 
