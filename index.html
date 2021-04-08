@@ -14,37 +14,37 @@
   <body>
     <header class="header">
       <h1 class="logo-name">Team Ereum Testing Website</h1>
-      <a href="./quiz-page.html" class="test-button">Take Test</a>
+      <a href="./test-page.html" class="test-button">Take Test</a>
     </header>
     <div class="carousel-container">
-      <div class="carousel">
         <!-- 
+          <div class="carousel">
           <div class="carousel-slides">
-            ${[images[images.length - 1], ...images, images[0]].map(url => `<img src="${url}" />`).join('')}
-        </div>
+              ${[images[images.length - 1], ...images, images[0]].map(url => `<img src="${url}" />`).join('')}
+          </div>
+          </div>
+          <button class="carousel-control prev">&laquo; previous</button>
+          <button class="carousel-control next">next &raquo;</button>
         -->
-      </div>
-      <button class="carousel-control prev">&laquo; previous</button>
-      <button class="carousel-control next">next &raquo;</button>
     </div>
     <section class="language-info">
       <h2 class="info-title">Program Languages</h2>
       <ul class="language-lists">
-        <li class="language-list language1 common">
+        <li class="language-list language1">
           <div class="info HTML" style="z-index: 0;">HTML</div>
-          <img src="" alt="HTML-image" class="img" style="z-index: 0;">
+          <img src="" alt="HTML-image" style="z-index: 0;">
         </li>
-        <li class="language-list language2 common">
+        <li class="language-list language2">
           <div class="info CSS" style="z-index: 0;">CSS</div>
-          <img src="" alt="CSS-image" class="img" style="z-index: 0;">
+          <img src="" alt="CSS-image" style="z-index: 0;">
         </li>
-        <li class="language-list language3 common">
+        <li class="language-list language3">
           <div class="info JAVASCRIPT" style="z-index: 0;">JAVASCRIPT</div>
-          <img src="" alt="JS-image" class="img" style="z-index: 0;">
+          <img src="" alt="JS-image" style="z-index: 0;">
         </li>
-        <li class="language-list language4 common">
+        <li class="language-list language4">
           <div class="info PYTHON" style="z-index: 0;"></div>
-          <img src="" alt="PYTHON-image" class="img" style="z-index: 0;">
+          <img src="" alt="PYTHON-image" style="z-index: 0;">
         </li>
       </ul>
     </section>
@@ -57,9 +57,7 @@
         </address>
       </div>
       <div class="copyright">
-        <small>
-          Copyright since &copy; 2021 by Team Ereum ALL RIGHTS RESERVED.
-        </small>
+        <small>Copyright since &copy; 2021 by Team Ereum ALL RIGHTS RESERVED.</small>
       </div>
     </footer>
   </body>
